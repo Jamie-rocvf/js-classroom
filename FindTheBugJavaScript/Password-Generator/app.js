@@ -61,4 +61,5 @@ const UPPERCASE_CHAR_CODES = arrayLowToHigh(65, 90);
 const NUMBER_CHAR_CODES = arrayLowToHigh(48, 57);
 const SYMBOL_CHAR_CODES = arrayLowToHigh(33, 47)
   .concat(arrayLowToHigh(58, 64))
-  .concat(arrayLowToHigh(91, 96));
+  .concat(arrayLowToHigh(91, 96))
+  .concat(arrayLowToHigh(123, 126));
