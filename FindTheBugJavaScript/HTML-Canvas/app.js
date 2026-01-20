@@ -18,7 +18,7 @@ function getCanvas() {
       draw(event);
     }
 
-    function stopDrawing() {
+    function stopDrawing(event) {
       painting = false;
       ctx.beginPath();
     }
@@ -39,7 +39,7 @@ function getCanvas() {
     }
 
     window.addEventListener("mousedown", startDrawing);
-    window.addEventListener("mouseup", startDrawing);
+    window.addEventListener("mouseup", stopDrawing);
     window.addEventListener("mousemove", draw);
   } else {
     console.log(`brower doesn't support canvas`);
